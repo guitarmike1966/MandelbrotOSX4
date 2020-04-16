@@ -13,6 +13,7 @@
 		D95AE74C2447D03C002C944E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95AE74A2447D03C002C944E /* Main.storyboard */; };
 		D95AE7582447D03C002C944E /* MandelbrotOSX4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AE7572447D03C002C944E /* MandelbrotOSX4Tests.swift */; };
 		D95AE7632447D03C002C944E /* MandelbrotOSX4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AE7622447D03C002C944E /* MandelbrotOSX4UITests.swift */; };
+		D95AE7712447D09B002C944E /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AE7702447D09B002C944E /* CustomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		D95AE75E2447D03C002C944E /* MandelbrotOSX4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MandelbrotOSX4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95AE7622447D03C002C944E /* MandelbrotOSX4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandelbrotOSX4UITests.swift; sourceTree = "<group>"; };
 		D95AE7642447D03C002C944E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95AE7702447D09B002C944E /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				D95AE7442447D03A002C944E /* AppDelegate.swift */,
 				D95AE7462447D03A002C944E /* ViewController.swift */,
+				D95AE7702447D09B002C944E /* CustomImageView.swift */,
 				D95AE7482447D03B002C944E /* Assets.xcassets */,
 				D95AE74A2447D03C002C944E /* Main.storyboard */,
 				D95AE74D2447D03C002C944E /* Info.plist */,
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D95AE7472447D03A002C944E /* ViewController.swift in Sources */,
+				D95AE7712447D09B002C944E /* CustomImageView.swift in Sources */,
 				D95AE7452447D03A002C944E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
