@@ -56,7 +56,8 @@ class ViewController: NSViewController {
 
         for x in startNumber..<endNumber {
 
-            let newImage = CustomImageView(frame: NSRect(x: 0, y: 0, width: WIDTH, height: HEIGHT))
+            // let newImage = CustomImageView(frame: NSRect(x: 0, y: 0, width: WIDTH, height: HEIGHT))
+            let newImage = CustomImage(XA: xxa, XB: xxb, YA: xya, YB: xyb)
 
             (xxa,xxb) = calc(a: startXA, b: startXB, iter: x, rate: Rate, portionA: 0.3118, portionB: 0.6882)
             (xya,xyb) = calc(a: startYA, b: startYB, iter: x, rate: Rate, portionA: 0.609, portionB: 0.391)
@@ -66,17 +67,14 @@ class ViewController: NSViewController {
             newImage.ya = xya
             newImage.yb = xyb
 
-            newImage.createImage()
-
-            // MandelbrotImageView.image = newImage.image
+            MandelbrotImageView.image = newImage.createImage()
 
             let downloadURL = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
 
             self.imageCounter = x
-//            let fileName = String(format: "new-mandelbrot-%04d.png", self.imageCounter)
-//            let destinationURL = downloadURL.appendingPathComponent(fileName)
-//            // let saveResult = self.MandelbrotImageView.image!.pngWrite(to: destinationURL)
-//            let saveResult = newImage.image!.pngWrite(to: destinationURL)
+            let fileName = String(format: "new-mandelbrot-%04d.png", self.imageCounter)
+            let destinationURL = downloadURL.appendingPathComponent(fileName)
+            let saveResult = self.MandelbrotImageView.image!.pngWrite(to: destinationURL)
 
             DispatchQueue.main.async {
                 self.ImageCountLabel.stringValue = String(format: "%05d", self.imageCounter)
@@ -102,6 +100,11 @@ class ViewController: NSViewController {
         bReturn = b - bChange
 
         return (aReturn,bReturn)
+    }
+    
+    
+    private func drawImage() {
+        
     }
 
 

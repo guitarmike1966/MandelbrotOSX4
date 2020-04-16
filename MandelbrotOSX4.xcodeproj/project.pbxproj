@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D914015324480BE4006E2ED6 /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D914015224480BE4006E2ED6 /* CustomImage.swift */; };
 		D95AE7452447D03A002C944E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AE7442447D03A002C944E /* AppDelegate.swift */; };
 		D95AE7472447D03A002C944E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AE7462447D03A002C944E /* ViewController.swift */; };
 		D95AE7492447D03B002C944E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95AE7482447D03B002C944E /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D914015224480BE4006E2ED6 /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		D95AE7412447D03A002C944E /* MandelbrotOSX4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MandelbrotOSX4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95AE7442447D03A002C944E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D95AE7462447D03A002C944E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				D95AE7442447D03A002C944E /* AppDelegate.swift */,
 				D95AE7462447D03A002C944E /* ViewController.swift */,
 				D95AE7702447D09B002C944E /* CustomImageView.swift */,
+				D914015224480BE4006E2ED6 /* CustomImage.swift */,
 				D95AE7482447D03B002C944E /* Assets.xcassets */,
 				D95AE74A2447D03C002C944E /* Main.storyboard */,
 				D95AE74D2447D03C002C944E /* Info.plist */,
@@ -259,6 +262,7 @@
 			files = (
 				D95AE7472447D03A002C944E /* ViewController.swift in Sources */,
 				D95AE7712447D09B002C944E /* CustomImageView.swift in Sources */,
+				D914015324480BE4006E2ED6 /* CustomImage.swift in Sources */,
 				D95AE7452447D03A002C944E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
